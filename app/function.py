@@ -13,7 +13,7 @@ import urllib.parse
 @st.cache_data
 def load_model():
 
-    df = pd.read_csv('./toy_data.csv',index_col=[0])
+    df = pd.read_csv('toy_data.csv',index_col=[0])
     return df
 
 def vectorize_image(image_url,azure_endpoint,azure_api_key):
