@@ -147,7 +147,7 @@ def get_most_similar_images(real_vector, Dall_e_Vectors, image_urls):
     similarities = [get_cosine_similarity(real_vector, vector) for vector in Dall_e_Vectors]
 
     # Find indices of Dall_e_Vectors with the highest similarities
-    max_similarity_indices = sorted(range(len(similarities)), key=lambda i: similarities[i], reverse=True)[:5]
+    max_similarity_indices = sorted(range(len(similarities)), key=lambda i: similarities[i], reverse=True)[:10]
 
     # Return URLs of most similar images
     return [image_urls[i] for i in max_similarity_indices]
