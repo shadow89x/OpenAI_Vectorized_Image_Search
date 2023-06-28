@@ -75,7 +75,7 @@ def main():
         
     else:
 
-        query = c.text_input("", value="robot")
+        query = c.text_input("", value="car")
 
     
 
